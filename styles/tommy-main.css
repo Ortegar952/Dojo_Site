@@ -3,7 +3,31 @@ body {
 	margin: 0;
 }
 
+/*-------------------------------------------- 
+				NAVIGATION BAR
+---------------------------------------------*/
+nav {
+	height          : 70px;
+	width           : 100%;
+	background-color: #ffffff;
+	display         : flex;
+	justify-content : flex-end;
+}
 
+nav a {
+	text-decoration: none;
+	color          : #5e5d5d;
+	padding        : 14px 8px;
+	line-height    : 50px;
+}
+
+.social-logos img {
+	width     : 16px;
+	margin-top: 15px;
+}
+.social-logos:last-child {
+	margin-right: 60px;
+}
 /*---------------------------------------------
 				ABOUT ME PAGE
 -----------------------------------------------*/
