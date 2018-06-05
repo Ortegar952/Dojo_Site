@@ -9,7 +9,7 @@ body {
 /*-------------------------------------------- 
 				NAVIGATION BAR
 ---------------------------------------------*/
-nav {
+#topNav {
 	height          : 70px;
 	width           : 100%;
 	background-color: #ffffff;
@@ -17,14 +17,14 @@ nav {
 	justify-content : flex-end;
 }
 
-nav a {
+#topNav a {
 	text-decoration: none;
 	color          : #5e5d5d;
 	padding        : 14px 8px;
 	line-height    : 50px;
 }
 
-nav a:hover {
+#topNav a:hover {
 	color: #4595f7;
 }
 
@@ -38,6 +38,43 @@ nav a:hover {
 .icon {
 	display: none;
 }
+
+
+.sidenav {
+	height          : 100%;
+	width           : 0;
+	position        : fixed;
+	z-index         : 1;
+	top             : 0;
+	right           : 0;
+	background-color: #263238;
+	overflow-x      : hidden;
+	transition      : 0.5s;
+	padding-top     : 60px;
+}
+
+.sidenav a {
+	padding        : 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size      : 25px;
+	color          : #818181;
+	display        : block;
+	transition     : 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+	position   : absolute;
+	top        : 0;
+	right      : 25px;
+	font-size  : 2.5rem;
+	margin-left: 50px;
+}
+
+
 /*---------------------------------------------
 				ABOUT ME PAGE
 -----------------------------------------------*/
@@ -224,30 +261,40 @@ header p {
 
 @media screen and (max-width:768px) {
   .album-container {
-    display: block;
-    height: 100%;
+	    display: block;
+	    height: 100%;
   }
   .thumbnail-container,
   .thumbnail-container-2,
   .thumbnail-container-3 {
-	width     : 90%;
-	margin    : 20px auto;
-	min-width : 500px;
-	max-height: initial;
-
+		width     : 90%;
+		margin    : 20px auto;
+		min-width : 500px;
+		max-height: initial;
   }
 
   .overlay {
-  	opacity: 1;
+  		opacity: 1;
   }
-}
 
-@media screen and (max-width: 768px) {
-	nav a:not(:last-child) {
+	#topNav a:not(:last-child) {
 		display: none;
 	}
 
 	.icon {
 		display: block;
+	}
+	
+	.responsive {
+		height          : 100%;
+		width           : 250px;
+		z-index: 1;
+		position        : fixed;
+		right           : 0;
+		top             : 0;
+		background-color: #111;
+		overflow-x      : hidden;
+		transition      : 0.5s;
+		padding-top     : 60px;
 	}
 }
