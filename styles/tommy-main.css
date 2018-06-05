@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 body {
-	font-family: 'Roboto Condensed', sans-serif;
-	margin: 0;
+	font-family     : 'Roboto Condensed', sans-serif;
+	margin          : 0;
+	background-color: #f1f1f1;
 }
 
 /*-------------------------------------------- 
@@ -33,6 +34,9 @@ nav a:hover {
 }
 .social-logos:last-child {
 	margin-right: 60px;
+}
+.icon {
+	display: none;
 }
 /*---------------------------------------------
 				ABOUT ME PAGE
@@ -70,7 +74,8 @@ nav a:hover {
 
 footer {
 	color: #5e5d5d;
-	margin-left: 50px;
+	padding-left: 50px;
+	background-color: white;
 }
 
 
@@ -153,7 +158,7 @@ header p {
 
 .album-container {
 	width           : 100%;
-	height          : 500px;
+	height          : 100%;
 	display         : flex;
 	justify-content : space-evenly;
 	align-items     : center;
@@ -164,27 +169,32 @@ header p {
 .thumbnail-container, .thumbnail-container-2, .thumbnail-container-3 {
 	width : 30%;
 	height: 60%;
+	max-width: 350px;
+    max-height: 500px;
 }
 
 .thumbnail-container {
-	background-image :url(https://source.unsplash.com/1600x900/?people,portrait);
+	background-image :url(https://source.unsplash.com/800x1200/?people,portrait);
 	background-repeat: no-repeat;
 	background-size  : cover;
 	position         : relative;
+	background-position: center;
 }
 
 .thumbnail-container-2 {
-	background-image :url(https://source.unsplash.com/1600x900/?animals,pets);
+	background-image :url(https://source.unsplash.com/800x1200/?animals,pets);
 	background-repeat: no-repeat;
 	background-size  : cover;
 	position         : relative;
+	background-position: center;
 }
 
 .thumbnail-container-3 {
-	background-image : url(https://source.unsplash.com/1600x900/?snow,mountain);
+	background-image : url(https://source.unsplash.com/800x1200/?snow,mountain);
 	background-repeat: no-repeat;
 	background-size  : cover;
 	position         : relative;
+	background-position: center;
 }
 
 .overlay {
@@ -195,7 +205,7 @@ header p {
 	transition: .5s ease;
 	opacity   :0;
 	color     : black;
-	font-size : 20px;
+	font-size : 1.2rem;
 	text-align: center;
 }
 
@@ -205,4 +215,39 @@ header p {
 
 .date {
 	font-size: .8rem;
+}
+
+/* --------------------------------
+		MEDIA QUERIES 
+-----------------------------------*/
+
+
+@media screen and (max-width:768px) {
+  .album-container {
+    display: block;
+    height: 100%;
+  }
+  .thumbnail-container,
+  .thumbnail-container-2,
+  .thumbnail-container-3 {
+	width     : 90%;
+	margin    : 20px auto;
+	min-width : 500px;
+	max-height: initial;
+
+  }
+
+  .overlay {
+  	opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	nav a:not(:last-child) {
+		display: none;
+	}
+
+	.icon {
+		display: block;
+	}
 }
