@@ -134,7 +134,7 @@ footer {
 	width           : 453px;
 	position        : absolute;
 	left            : 30px;
-	top             : 45px;
+	bottom             : 45px;
 	color           : #5e5d5d;
 }
 
@@ -307,12 +307,18 @@ header p {
   		right: 0;
   		height: auto;
   	}
-
-
-
-
-
-
-
-
+  	
+  	.get-in-touch p, .get-in-touch h1, .get-in-touch form {
+    	margin-left: 0; 
+    }
+	
+	.get-in-touch-inner-text {
+		width: 100%;
+		left: 0;
+		bottom: -400px;
+	}
+	
+	.get-in-touch form {
+		width: 100%;
+	}
 }
