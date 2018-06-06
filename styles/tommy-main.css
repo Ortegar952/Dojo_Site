@@ -37,6 +37,7 @@ body {
 }
 .icon {
 	display: none;
+	margin-right: 10px;
 }
 
 
@@ -49,7 +50,7 @@ body {
 	right           : 0;
 	background-color: #263238;
 	overflow-x      : hidden;
-	transition      : 0.5s;
+	transition      : 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 	padding-top     : 60px;
 }
 
@@ -86,7 +87,7 @@ body {
 	height          : 500px;
 	position        : absolute;
 	right           : 15px;
-	top             : 85px;
+	bottom          : 85px;
 	background-color: white;
 }
 
@@ -263,19 +264,18 @@ header p {
   .album-container {
 	    display: block;
 	    height: 100%;
-  }
+  	}
   .thumbnail-container,
   .thumbnail-container-2,
   .thumbnail-container-3 {
 		width     : 90%;
 		margin    : 20px auto;
 		min-width : 500px;
-		max-height: initial;
-  }
+  	}
 
   .overlay {
   		opacity: 1;
-  }
+  	}
 
 	#topNav a:not(:last-child) {
 		display: none;
@@ -284,17 +284,35 @@ header p {
 	.icon {
 		display: block;
 	}
-	
-	.responsive {
-		height          : 100%;
-		width           : 250px;
-		z-index: 1;
-		position        : fixed;
-		right           : 0;
-		top             : 0;
-		background-color: #111;
-		overflow-x      : hidden;
-		transition      : 0.5s;
-		padding-top     : 60px;
-	}
+
+	.about-me {
+  		width: auto;
+  		padding: 0;
+  		right: 0;
+  		bottom: 0;
+  		height: auto;
+  	}
+}
+
+@media screen and (max-width:425px) {
+	.thumbnail-container,
+  .thumbnail-container-2,
+  .thumbnail-container-3 {
+		min-width : initial;
+  	}
+
+  	.about-me {
+  		width: 100%;
+  		bottom: -300px;
+  		right: 0;
+  		height: auto;
+  	}
+
+
+
+
+
+
+
+
 }
