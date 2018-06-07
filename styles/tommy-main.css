@@ -1,0 +1,63 @@
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	margin: 0;
+}
+
+/*-------------------------------------------- 
+				NAVIGATION BAR
+---------------------------------------------*/
+nav {
+	height          : 70px;
+	width           : 100%;
+	background-color: #ffffff;
+	display         : flex;
+	justify-content : flex-end;
+}
+
+nav a {
+	text-decoration: none;
+	color          : #5e5d5d;
+	padding        : 14px 8px;
+	line-height    : 50px;
+}
+
+.social-logos img {
+	width     : 16px;
+	margin-top: 15px;
+}
+.social-logos:last-child {
+	margin-right: 60px;
+}
+/*---------------------------------------------
+				ABOUT ME PAGE
+-----------------------------------------------*/
+
+.about-me {
+	color           : #5e5d5d;
+	padding         : 15px;
+	width           : 400px;
+	height          : 500px;
+	position        : absolute;
+	right           : 15px;
+	top             : 85px;
+	background-color: white;
+}
+
+.about-me p, h1 {
+    padding: 0 30px;
+    line-height: 1.5em;
+}
+
+.about-me h1 {
+	font-weight: 100;
+}
+
+.container {
+	background-image   : url(../about-me-background.jpg);
+	background-repeat  : no-repeat;
+	background-size    : cover;
+	background-position: center;
+	height             : 80vh;
+	width              : 100%;
+	position           : relative;
+}
