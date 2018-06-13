@@ -5,7 +5,10 @@
 /*-------------------------------------------- 
 				NAVIGATION BAR
 ---------------------------------------------*/
-nav {
+/*THIS IS COMMENTED OUT BECAUSE I LINKED MY CSS AND THIS IS NOT NEEDED*/
+
+
+/*nav {
 	height          : 70px;
 	width           : 100%;
 	background-color: #ffffff;
@@ -26,7 +29,7 @@ nav a {
 }
 .social-logos:last-child {
 	margin-right: 60px;
-}
+}*/
 
 /*-----------------------------------------------
 				GRID ELEMENTS()
