@@ -48,8 +48,10 @@ body, html {
 
 .text2 {
   font-size: 139px;
-  margin-bottom:40%;
-}
+/*  margin-bottom:40%;
+
+*/
+ float: bottom;}
 .text3 {
   font-size: 80px;
 }
